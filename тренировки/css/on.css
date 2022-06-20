@@ -1,0 +1,99 @@
+/* colors for check
+
+ .section:nth-child(odd) {
+  background-color: lightgrey;
+}
+.section:nth-child(even) {
+  background-color: teal;
+}
+.section {
+  outline: 1px solid tomato;
+}
+.container {
+  outline: 1px solid tomato;
+}
+
+.section-title {
+  outline: 1px solid tomato;
+}
+.contacts {
+  outline: 1px solid tomato;
+}
+.header-container {
+  outline: 1px solid tomato;
+}
+.footer .container,
+.header-nav.list > li {
+  outline: 1px solid tomato;
+}
+.header-nav.list .item {
+  background-color: tomato;
+}
+.list-address.list .link {
+  background-color: tomato;
+}
+.flex-element {
+  
+  background-color: tomato;
+  outline: 1px solid tomato;
+} 
+.features {
+
+  outline: 1px solid blue;
+}
+.feature-icon {
+
+  outline: 1px solid red;
+}
+.clients-list {
+outline: 1px solid red;
+}
+.client-link {
+outline: 1px solid red;}
+
+.clients-list {
+
+outline: 1px solid red;
+
+}
+.overlay {outline: 1px solid tomato; }
+.client-link {
+outline: 1px solid red;}  
+
+.socials-block .text {
+  outline: 1px solid yellow;
+}
+.socials-footer {
+  
+  outline: 1px solid blue;
+} */
+
+/* Hero */
+
+.feature-set {
+  @extend: %list;
+}
+
+
+.list {
+  list-style: none;
+}
+
+
+.feature-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 32px;
+  background-color: aqua;
+
+}
+
+$colors: "#234234", "#235434", "#342332",
+"#542343", "#129843", "#823452";
+
+@include colorize($colors, ".feature-item");
+
+
+

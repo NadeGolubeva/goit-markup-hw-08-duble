@@ -1,0 +1,122 @@
+/* Team */
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.section.team {
+    background-color: #f5f4fa;
+}
+
+.team-list {
+   
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+    
+        }
+}
+
+.team-list .item:nth-child(4n) {
+
+    @media screen and (min-width:1200px) {
+    margin-right: 0;
+}}
+
+.team-list .item {
+   
+@media screen and (max-width:767px){
+    margin-bottom: 30px;
+
+
+}
+@media screen and (min-width:768px) {
+        margin: 15px;
+    
+    width: calc((100% - 15*4)/2);
+}
+}
+
+.team-list h3 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    text-transform: capitalize;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.team-list .item {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
+}
+
+.team-member {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width:1200px) {
+    padding-bottom: 30px;}
+}
+
+/* Team icon */
+.social-list {
+    display: flex;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 16px;
+    justify-content: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    fill: #afb1b8;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: white;
+    }
+}
+

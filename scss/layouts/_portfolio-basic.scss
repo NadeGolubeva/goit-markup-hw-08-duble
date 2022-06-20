@@ -1,0 +1,42 @@
+/*  Our works Portfolio */
+
+
+// .work-container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+.filters {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        }
+
+                margin-bottom: 25px;
+         @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+         }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+    cursor: pointer;
+    
+}
+
+.filters .btn {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 15px;}
+
+    &:nth-child(4), &:nth-child(5) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0px;
+        }}
+
+}
+
+
+
